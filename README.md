@@ -58,6 +58,60 @@ Metti `GOOGLE_CLIENT_ID` e `GOOGLE_CLIENT_SECRET` nel file `.env`.
 
 Per reCAPTCHA reale metti la site key in `content.js` e la secret key in `.env` come `RECAPTCHA_SECRET_KEY`.
 
+## Cloudflare Pages con login e database
+
+Questo repo include anche `functions/` per Cloudflare Pages Functions e `schema.sql` per Cloudflare D1.
+
+Su Cloudflare Pages usa:
+
+```text
+Build command: npm run build
+Build output directory: dist
+Root directory: /
+```
+
+Poi crea un database D1:
+
+1. Cloudflare dashboard > Storage & Databases > D1 SQL Database.
+2. Crea database, per esempio `portfolio_frelerr`.
+3. Apri la console SQL ed esegui il contenuto di `schema.sql`.
+4. Nel progetto Pages vai in Settings > Functions > D1 database bindings.
+5. Aggiungi binding:
+
+```text
+Variable name: DB
+Database: portfolio_frelerr
+```
+
+In Settings > Environment variables aggiungi:
+
+```text
+BASE_URL=https://portfolio-frelerr.pages.dev
+DISCORD_CLIENT_ID=...
+DISCORD_CLIENT_SECRET=...
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+SESSION_SECRET=una-stringa-lunga-random
+```
+
+Per Discord aggiungi nei redirect:
+
+```text
+https://portfolio-frelerr.pages.dev/auth/discord/callback
+```
+
+Per Google aggiungi:
+
+```text
+Authorized JavaScript origins:
+https://portfolio-frelerr.pages.dev
+
+Authorized redirect URIs:
+https://portfolio-frelerr.pages.dev/auth/google/callback
+```
+
+Quando userai il dominio, aggiungi gli stessi URL con il tuo dominio.
+
 Questo progetto e pronto per GitHub Pages: carica questi file in un repository e pubblica la branch principale da Settings > Pages.
 
 ## Modifiche rapide
