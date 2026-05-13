@@ -1,0 +1,23 @@
+# Secrets and local runtime data
+.env
+.env.*
+!.env.example
+data/
+*.log
+
+# Local-only Node/server files
+node_modules/
+server.js
+
+# Generated build output
+dist/
+
+# Old local admin panel lives in the separate ADMIN site now
+admin.html
+admin.css
+admin.js
+
+# OS/editor noise
+desktop.ini
+.DS_Store
+.vscode/
