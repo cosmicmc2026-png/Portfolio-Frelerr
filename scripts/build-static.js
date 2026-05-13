@@ -5,9 +5,6 @@ const root = path.resolve(__dirname, "..");
 const out = path.join(root, "dist");
 const files = [
   "index.html",
-  "admin.html",
-  "admin.css",
-  "admin.js",
   "styles.css",
   "app.js",
   "content.js",
@@ -31,8 +28,17 @@ async function main() {
   await fs.rm(out, { recursive: true, force: true });
   await fs.mkdir(out, { recursive: true });
 
-  await Promise.all(files.map((file) => fs.copyFile(path.join(root, file), path.join(out, file))));
-  await Promise.all(dirs.map((dir) => copyDir(path.join(root, dir), path.join(out, dir))));
+  await Promise.all(files.map(async (file) => {
+    const source = path.join(root, file);
+    await fs.access(source);
+    await fs.copyFile(source, path.join(out, file));
+  }));
+
+  await Promise.all(dirs.map(async (dir) => {
+    const source = path.join(root, dir);
+    await fs.access(source);
+    await copyDir(source, path.join(out, dir));
+  }));
 }
 
 main().catch((error) => {
