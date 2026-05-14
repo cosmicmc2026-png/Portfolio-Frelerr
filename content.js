@@ -42,7 +42,7 @@ window.PORTFOLIO_DATA = {
       "workTitle": "Cose che sto facendo e che voglio mostrare.",
       "filterAll": "Tutto",
       "openProject": "Apri",
-      "catCazzeggio": "Extra",
+      "catExtra": "Extra",
       "catSocialmedia": "Social media",
       "catCommissioni": "Commissioni",
       "noImage": "Non ancora inserita",
@@ -96,7 +96,7 @@ window.PORTFOLIO_DATA = {
       "workTitle": "Dinge, an denen ich arbeite und die ich zeigen moechte.",
       "filterAll": "Alles",
       "openProject": "Oeffnen",
-      "catCazzeggio": "Extras",
+      "catExtra": "Extras",
       "catSocialmedia": "Social Media",
       "catCommissioni": "Auftraege",
       "noImage": "Noch nicht eingefuegt",
@@ -143,7 +143,7 @@ window.PORTFOLIO_DATA = {
       "workTitle": "Things I am making and want to show.",
       "filterAll": "All",
       "openProject": "Open",
-      "catCazzeggio": "Extras",
+      "catExtra": "Extras",
       "catSocialmedia": "Social media",
       "catCommissioni": "Commissions",
       "noImage": "Not added yet",
@@ -190,7 +190,7 @@ window.PORTFOLIO_DATA = {
       "workTitle": "Cosas que estoy haciendo o que quiero mostrar.",
       "filterAll": "Todo",
       "openProject": "Abrir",
-      "catCazzeggio": "Extras",
+      "catExtra": "Extras",
       "catSocialmedia": "Redes",
       "catCommissioni": "Comisiones",
       "noImage": "Aún no añadido",
@@ -237,7 +237,7 @@ window.PORTFOLIO_DATA = {
       "workTitle": "Ce que je crée ou ce que je veux montrer.",
       "filterAll": "Tout",
       "openProject": "Ouvrir",
-      "catCazzeggio": "Extras",
+      "catExtra": "Extras",
       "catSocialmedia": "Réseaux",
       "catCommissioni": "Commissions",
       "noImage": "Pas encore ajouté",
@@ -284,7 +284,7 @@ window.PORTFOLIO_DATA = {
       "workTitle": "То, что я делаю или хочу показать.",
       "filterAll": "Все",
       "openProject": "Открыть",
-      "catCazzeggio": "Экстра",
+      "catExtra": "Экстра",
       "catSocialmedia": "Соцсети",
       "catCommissioni": "Заказы",
       "noImage": "Еще не добавлено",
@@ -317,11 +317,11 @@ window.PORTFOLIO_DATA = {
   "projects": [
     {
       "id": "extra",
-      "category": "cazzeggio",
+      "category": "extra",
       "accent": "#d90028",
       "year": "2026",
       "url": "#",
-      "image": "assets/sdasd.png",
+      "image": "assets/Extra/extra_2.png",
       "placeholder": "#6d38d8",
       "title": {
         "it": "Extra",
@@ -340,7 +340,7 @@ window.PORTFOLIO_DATA = {
       },
       "gallery": [
         {
-          "src": "assets/cazzeggio_1.png",
+          "src": "assets/Extra/extra_1.png",
           "title": {
             "it": "KingdomSMP",
             "de": "KingdomSMP",
@@ -353,7 +353,7 @@ window.PORTFOLIO_DATA = {
           }
         },
         {
-          "src": "assets/sdasd.png",
+          "src": "assets/Extra/extra_2.png",
           "title": {
             "it": "FrelerrCUP",
             "de": "FrelerrCUP",
@@ -364,6 +364,20 @@ window.PORTFOLIO_DATA = {
             "de": "Icon fuer ein Brawl-Stars-Turnier, das ich selbst organisiert, geleitet und geplant habe.",
             "en": "Icon made by me for a Brawl Stars tournament that I organized, directed, and designed myself."
           }
+        },
+        {
+          "src": "assets/Extra/extra_3.png",
+          "title": {
+            "it": "Miniatura Video",
+            "de": "Video-Thumbnail",
+            "en": "Video Thumbnail"
+          },
+          "description": {
+            "it": "Questa e un prototipo di una copertina per un possibile video Youtube futuro, fatta per allenarmi.",
+            "de": "Das ist ein Prototyp eines Covers fuer ein moegliches zukuenftiges YouTube-Video, gemacht zum Ueben.",
+            "en": "This is a prototype cover for a possible future YouTube video, made as practice."
+          },
+          "featured": true
         }
       ]
     },
@@ -373,7 +387,7 @@ window.PORTFOLIO_DATA = {
       "accent": "#ff2d3f",
       "year": "2026",
       "url": "https://www.youtube.com/@frelerr",
-      "image": "assets/social_3.png",
+      "image": "assets/Social_Media/social_1.png",
       "placeholder": "#7d3cc4",
       "title": {
         "it": "Social media",
@@ -392,7 +406,7 @@ window.PORTFOLIO_DATA = {
       },
       "gallery": [
         {
-          "src": "assets/social_3.png",
+          "src": "assets/Social_Media/social_1.png",
           "title": {
             "it": "Miniatura Video",
             "de": "Video-Thumbnail",
@@ -405,7 +419,7 @@ window.PORTFOLIO_DATA = {
           }
         },
         {
-          "src": "assets/social_2.png",
+          "src": "assets/Social_Media/social_2.png",
           "title": {
             "it": "Miniatura Versus",
             "de": "Versus-Thumbnail",
@@ -418,7 +432,7 @@ window.PORTFOLIO_DATA = {
           }
         },
         {
-          "src": "assets/cosmicmc-social-icon.png",
+          "src": "assets/Social_Media/social_3.png",
           "title": {
             "it": "CosmicMC",
             "de": "CosmicMC",
@@ -439,7 +453,7 @@ window.PORTFOLIO_DATA = {
       "accent": "#b60022",
       "year": "2026",
       "url": "#",
-      "image": "assets/commissioni_1.png",
+      "image": "assets/Commissioni/commissioni_1.png",
       "placeholder": "#5533b3",
       "title": {
         "it": "Commissioni",
@@ -458,7 +472,7 @@ window.PORTFOLIO_DATA = {
       },
       "gallery": [
         {
-          "src": "assets/commissioni_1.png",
+          "src": "assets/Commissioni/commissioni_1.png",
           "title": {
             "it": "Logo Pizzeria",
             "de": "Pizzeria-Logo",

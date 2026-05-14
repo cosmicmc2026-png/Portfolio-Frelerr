@@ -49,6 +49,9 @@
   const imageLightboxImg = document.querySelector("#image-lightbox-img");
   const imageLightboxTitle = document.querySelector("#image-lightbox-title");
   const imageLightboxClose = document.querySelector("#image-lightbox-close");
+  const emailModal = document.querySelector("#email-modal");
+  const emailModalLink = document.querySelector("#email-modal-link");
+  const emailModalClose = document.querySelector("#email-modal-close");
   let recaptchaWidgetId = null;
   let recaptchaReady = false;
 
@@ -156,9 +159,9 @@
 
   function languageMeta(language) {
     return ({
-      it: { flagSrc: "assets/italiano.png", label: "Italiano" },
-      de: { flagSrc: "assets/tedesco.png", label: "Deutsch" },
-      en: { flagSrc: "assets/inglese.svg", label: "English" }
+      it: { flagSrc: "assets/Bandiere/italiano.png", label: "Italiano" },
+      de: { flagSrc: "assets/Bandiere/tedesco.png", label: "Deutsch" },
+      en: { flagSrc: "assets/Bandiere/inglese.svg", label: "English" }
     })[language] || { flagSrc: "", label: language.toUpperCase() };
   }
 
@@ -279,7 +282,7 @@
 
   function projectIcon(category) {
     const icons = {
-      cazzeggio: `
+      extra: `
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M12 3.4l1.5 3.1 3.4.5-2.5 2.4.6 3.4-3-1.6-3 1.6.6-3.4L7.1 7l3.4-.5L12 3.4z"></path>
           <path d="M5.2 17.1c1.8-1.3 4.1-2 6.8-2s5 .7 6.8 2"></path>
@@ -421,19 +424,55 @@
 
     function linkIcon(label) {
       const key = String(label || "").toLowerCase();
-      if (key.includes("youtube")) return "assets/youtube.png";
-      if (key.includes("twitch")) return "assets/twitch.png";
-      if (key.includes("discord")) return "assets/discord.png";
-      if (key.includes("email")) return "assets/mail.png";
+      if (key.includes("youtube")) return "assets/Loghi/youtube.png";
+      if (key.includes("twitch")) return "assets/Loghi/twitch.png";
+      if (key.includes("discord")) return "assets/Loghi/discord.png";
+      if (key.includes("email")) return "assets/Loghi/mail.png";
       return "";
     }
 
-    actions.innerHTML = links.map((link, index) => `
-      <a class="ghost-button social-button" href="${escapeHtml(safeUrl(link.url))}" ${safeUrl(link.url).startsWith("mailto:") ? "" : 'target="_blank" rel="noreferrer"'}>
-        <span class="button-icon">${linkIcon(link.label) ? `<img src="${escapeHtml(linkIcon(link.label))}" alt="">` : ""}</span>
-        <span>${escapeHtml(link.label)}</span>
-      </a>
-    `).join("");
+    actions.innerHTML = links.map((link, index) => {
+      const url = safeUrl(link.url);
+      const icon = linkIcon(link.label);
+      const isEmail = url.startsWith("mailto:");
+      const email = isEmail ? url.replace(/^mailto:/i, "") : "";
+
+      if (isEmail) {
+        return `
+          <button class="ghost-button social-button" type="button" data-email-toggle data-email="${escapeHtml(email)}" aria-haspopup="dialog">
+            <span class="button-icon">${icon ? `<img src="${escapeHtml(icon)}" alt="">` : ""}</span>
+            <span>${escapeHtml(link.label)}</span>
+          </button>
+        `;
+      }
+
+      return `
+        <a class="ghost-button social-button" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">
+          <span class="button-icon">${icon ? `<img src="${escapeHtml(icon)}" alt="">` : ""}</span>
+          <span>${escapeHtml(link.label)}</span>
+        </a>
+      `;
+    }).join("");
+
+    actions.querySelector("[data-email-toggle]")?.addEventListener("click", (event) => {
+      closeMenus();
+      openEmailModal(event.currentTarget.dataset.email || data.contact?.email || "");
+    });
+  }
+
+  function openEmailModal(email) {
+    if (!emailModal || !emailModalLink || !email) return;
+    emailModalLink.href = `mailto:${email}`;
+    emailModalLink.textContent = email;
+    if (typeof emailModal.showModal === "function") {
+      emailModal.showModal();
+      return;
+    }
+    window.location.href = `mailto:${email}`;
+  }
+
+  function closeEmailModal() {
+    if (emailModal?.open) emailModal.close();
   }
 
   function initials(name) {
@@ -506,7 +545,7 @@
       return currentCategory === "all" || project.category === currentCategory;
     });
 
-    grid.classList.remove("detail-gallery", "detail-cazzeggio", "detail-socialmedia", "detail-commissioni", "detail-all");
+    grid.classList.remove("detail-gallery", "detail-extra", "detail-cazzeggio", "detail-socialmedia", "detail-commissioni", "detail-all");
     grid.innerHTML = projects.map((project, index) => `
       <a class="project-card project-${escapeHtml(project.category)} reveal" href="#portfolio/${escapeHtml(project.category)}" style="--accent:${safeColor(project.accent)}; --project-bg:${projectBackground(project, index)}">
         <div class="project-visual ${project.image ? "has-cover" : ""}">
@@ -524,7 +563,7 @@
 
   function renderDetailPage(category) {
     const items = galleryItems(category);
-    grid.classList.remove("detail-cazzeggio", "detail-socialmedia", "detail-commissioni", "detail-all");
+    grid.classList.remove("detail-extra", "detail-cazzeggio", "detail-socialmedia", "detail-commissioni", "detail-all");
     grid.classList.add("detail-gallery", `detail-${category}`);
     tabsWrap.innerHTML = "";
     grid.innerHTML = `
@@ -700,7 +739,7 @@
   function syncDataFromProjectEditor() {
     const languages = getLanguages();
     data.projects = [...projectEditorList.querySelectorAll(".project-editor-card")].map((card, index) => {
-      const category = card.querySelector("[data-field='category']").value.trim() || "cazzeggio";
+      const category = card.querySelector("[data-field='category']").value.trim() || "extra";
       const rawImage = card.querySelector("[data-field='image']").value.trim();
       const title = {};
       const description = {};
@@ -732,7 +771,7 @@
   function addProject() {
     data.projects.push({
       id: `progetto-${Date.now()}`,
-      category: "cazzeggio",
+      category: "extra",
       accent: "#ff2d55",
       year: String(new Date().getFullYear()),
       url: "#",
@@ -811,6 +850,10 @@
   imageLightbox?.addEventListener("close", () => {
     if (!imageLightboxImg) return;
     imageLightboxImg.removeAttribute("src");
+  });
+  emailModalClose?.addEventListener("click", closeEmailModal);
+  emailModal?.addEventListener("click", (event) => {
+    if (event.target === emailModal) closeEmailModal();
   });
 
   window.addEventListener("hashchange", () => {
