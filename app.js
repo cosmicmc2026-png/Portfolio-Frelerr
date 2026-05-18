@@ -206,7 +206,7 @@
     if (!activeCategory) {
       if (brand) {
         brand.classList.remove("is-back-link");
-        brand.setAttribute("href", "#home");
+        brand.setAttribute("href", "#");
         brand.setAttribute("aria-label", "Portfolio home");
         brand.innerHTML = `
           <span class="brand-mark home-mark" aria-hidden="true">
@@ -230,7 +230,7 @@
 
     if (brand) {
       brand.classList.add("is-back-link");
-      brand.setAttribute("href", "#home");
+      brand.setAttribute("href", "#");
       brand.setAttribute("aria-label", "Torna alla home");
       brand.innerHTML = `
         <span class="brand-mark back-mark" aria-hidden="true">
