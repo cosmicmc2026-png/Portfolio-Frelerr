@@ -662,7 +662,7 @@
               </label>
             </div>
 
-            <label>Immagine URL o file
+            <label>URL immagine o file
               <input data-field="image" value="${escapeHtml(project.image || "")}" placeholder="https://... oppure scegli un file sotto">
             </label>
             <div class="editor-tools inline-tools">

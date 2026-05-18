@@ -1,6 +1,6 @@
 window.PORTFOLIO_SETTINGS = {
   "editorPassword": "change-this-locally",
-  "contentVersion": "frelerr-style-v29",
+  "contentVersion": "frelerr-style-v31",
   "discordClientId": "1500899174512591129",
   "recaptchaSiteKey": ""
 };
@@ -36,8 +36,8 @@ window.PORTFOLIO_DATA = {
       "ctaWork": "Progetti",
       "ctaContact": "Link",
       "statCategories": "Categorie",
-      "availabilityLabel": "Status",
-      "availability": "Aperto a commissioni",
+      "availabilityLabel": "Stato",
+      "availability": "Aperto alle commissioni",
       "workEyebrow": "Progetti",
       "workTitle": "Cose che sto facendo e che voglio mostrare.",
       "filterAll": "Tutto",
@@ -48,13 +48,13 @@ window.PORTFOLIO_DATA = {
       "noImage": "Non ancora inserita",
       "aboutEyebrow": "Chi sono",
       "aboutTitle": "Creo contenuti, esperimenti e lavori su richiesta.",
-      "aboutText": "Sono un ragazzo con voglia di lavorare, passioni e talenti. Gestisco pagine social su YouTube, Twitch, Discord e altri canali. In questa pagina raccolgo le mie idee, i miei progetti e le mie commissioni.",
+      "aboutText": "Sono un ragazzo tedesco con voglia di lavorare, passioni e talenti. Gestisco pagine social su YouTube, Twitch, Discord e altri canali. In questa pagina raccolgo le mie idee, i miei progetti e le mie commissioni.",
       "contactEyebrow": "Link",
       "contactTitle": "Mi trovi qui.",
       "loginButton": "Accedi",
       "loginDiscord": "Accedi con Discord",
       "loginGoogle": "Accedi con Google",
-      "loginEmail": "Accedi con Email",
+      "loginEmail": "Accedi con email",
       "loginLogout": "Esci",
       "authEyebrow": "Accesso",
       "authTitle": "Crea il tuo profilo",
@@ -67,8 +67,8 @@ window.PORTFOLIO_DATA = {
       "authSubmit": "Entra",
       "authCancel": "Annulla",
       "authPhotoHelp": "Clicca il cerchio per caricare una foto.",
-      "authCaptchaMissing": "Aggiungi una site key reCAPTCHA in content.js per attivare la verifica reale.",
-      "authEmailInvalid": "Inserisci una email reale, non di prova.",
+      "authCaptchaMissing": "Aggiungi una chiave sito reCAPTCHA in content.js per attivare la verifica reale.",
+      "authEmailInvalid": "Inserisci un'email reale, non di prova.",
       "authCaptchaInvalid": "Completa la verifica reCAPTCHA.",
       "authEmailHelp": "Inserisci un'email valida",
       "authPasswordHelp": "Minimo 6 caratteri",
@@ -86,44 +86,44 @@ window.PORTFOLIO_DATA = {
       "navContact": "Links",
       "eyebrow": "Portfolio von Frelerr",
       "headline": "Frelerr",
-      "intro": "Hi, ich bin Frelerr. Hier sammle ich Videos, Social-Media-Inhalte, Experimente und Auftraege.",
+      "intro": "Hi, ich bin Frelerr. Hier sammle ich Videos, Social-Media-Inhalte, Experimente und Aufträge.",
       "ctaWork": "Projekte",
       "ctaContact": "Links",
       "statCategories": "Kategorien",
       "availabilityLabel": "Status",
-      "availability": "Offen fuer Auftragsarbeiten",
+      "availability": "Offen für Auftragsarbeiten",
       "workEyebrow": "Projekte",
-      "workTitle": "Dinge, an denen ich arbeite und die ich zeigen moechte.",
+      "workTitle": "Dinge, an denen ich arbeite und die ich zeigen möchte.",
       "filterAll": "Alles",
-      "openProject": "Oeffnen",
+      "openProject": "Öffnen",
       "catExtra": "Extras",
       "catSocialmedia": "Social Media",
-      "catCommissioni": "Auftraege",
-      "noImage": "Noch nicht eingefuegt",
+      "catCommissioni": "Aufträge",
+      "noImage": "Noch nicht eingefügt",
       "aboutEyebrow": "Info",
       "aboutTitle": "Ich erstelle Content, Experimente und Auftragsarbeiten.",
-      "aboutText": "Ich bin ein Junge mit Arbeitslust, Leidenschaften und Talenten. Ich betreibe Social-Media-Seiten auf YouTube, Twitch, Discord und weiteren Kanaelen. Auf dieser Seite sammle ich meine Ideen, Projekte und Auftragsarbeiten.",
+      "aboutText": "Ich bin ein deutscher Junge mit Arbeitslust, Leidenschaften und Talenten. Ich betreibe Social-Media-Seiten auf YouTube, Twitch, Discord und weiteren Kanälen. Auf dieser Seite sammle ich meine Ideen, Projekte und Auftragsarbeiten.",
       "contactEyebrow": "Links",
       "contactTitle": "Meine Links.",
       "loginButton": "Login",
       "loginDiscord": "Mit Discord einloggen",
       "loginGoogle": "Mit Google einloggen",
-      "loginEmail": "Mit Email einloggen",
+      "loginEmail": "Mit E-Mail einloggen",
       "loginLogout": "Abmelden",
       "authEyebrow": "Login",
       "authTitle": "Erstelle dein Profil",
-      "authEmailLabel": "Email",
+      "authEmailLabel": "E-Mail",
       "authPasswordLabel": "Passwort",
       "authUsernameLabel": "Benutzername",
       "authPhotoLabel": "Profilbild",
-      "authCaptcha": "reCAPTCHA bestaetigen",
-      "authHint": "Lokaler Demo-Login: fuer echten Login braucht es ein Backend.",
+      "authCaptcha": "reCAPTCHA bestätigen",
+      "authHint": "Lokaler Demo-Login: Für einen echten Login braucht es ein Backend.",
       "authSubmit": "Einloggen",
       "authCancel": "Abbrechen",
       "authPhotoHelp": "Klicke auf den Kreis, um ein Profilbild hochzuladen.",
-      "authCaptchaMissing": "Fuege in content.js einen reCAPTCHA Site Key ein, um echte Verifizierung zu aktivieren.",
-      "authEmailInvalid": "Gib eine echte Email ein, keine Test-Adresse.",
-      "authCaptchaInvalid": "Schliesse die reCAPTCHA Verifizierung ab."
+      "authCaptchaMissing": "Füge in content.js einen reCAPTCHA Site Key ein, um die echte Verifizierung zu aktivieren.",
+      "authEmailInvalid": "Gib eine echte E-Mail-Adresse ein, keine Test-Adresse.",
+      "authCaptchaInvalid": "Schließe die reCAPTCHA-Verifizierung ab."
     },
     "en": {
       "siteName": "Home",
@@ -149,7 +149,7 @@ window.PORTFOLIO_DATA = {
       "noImage": "Not added yet",
       "aboutEyebrow": "About",
       "aboutTitle": "I create content, experiments, and commissioned work.",
-      "aboutText": "I am a guy with motivation to work, passions, and talents. I run social pages on YouTube, Twitch, Discord, and other channels. On this page I collect my ideas, my projects, and my commissions.",
+      "aboutText": "I am a German guy with motivation to work, passions, and talents. I run social pages on YouTube, Twitch, Discord, and other channels. On this page I collect my ideas, my projects, and my commissions.",
       "contactEyebrow": "Links",
       "contactTitle": "Find me here.",
       "loginButton": "Log in",
@@ -196,13 +196,13 @@ window.PORTFOLIO_DATA = {
       "noImage": "Aún no añadido",
       "aboutEyebrow": "Sobre mí",
       "aboutTitle": "Hago contenido, experimentos y trabajos por encargo.",
-      "aboutText": "Soy un chico con ganas de trabajar, con pasiones y talentos, y con paginas sociales en YouTube, Twitch, Discord, etc. En esta pagina reuno mis ideas, mis proyectos y mis comisiones.",
+      "aboutText": "Soy un chico con ganas de trabajar, con pasiones y talentos, y con páginas sociales en YouTube, Twitch, Discord, etc. En esta página reúno mis ideas, mis proyectos y mis comisiones.",
       "contactEyebrow": "Links",
       "contactTitle": "Me encuentras aquí.",
       "loginButton": "Entrar",
       "loginDiscord": "Entrar con Discord",
       "loginGoogle": "Entrar con Google",
-      "loginEmail": "Entrar con Email",
+      "loginEmail": "Entrar con email",
       "loginLogout": "Salir",
       "authEyebrow": "Acceso",
       "authTitle": "Crea tu perfil",
@@ -215,7 +215,7 @@ window.PORTFOLIO_DATA = {
       "authSubmit": "Entrar",
       "authCancel": "Cancelar",
       "authPhotoHelp": "Haz clic en el círculo para subir una foto.",
-      "authCaptchaMissing": "Añade una site key de reCAPTCHA en content.js para activar la verificación real.",
+      "authCaptchaMissing": "Añade una clave de sitio reCAPTCHA en content.js para activar la verificación real.",
       "authEmailInvalid": "Introduce un email real, no una dirección de prueba.",
       "authCaptchaInvalid": "Completa la verificación reCAPTCHA."
     },
@@ -243,13 +243,13 @@ window.PORTFOLIO_DATA = {
       "noImage": "Pas encore ajouté",
       "aboutEyebrow": "À propos",
       "aboutTitle": "Je fais du contenu, des essais et des commandes.",
-      "aboutText": "Je suis un garcon qui a envie de travailler, avec des passions et des talents, et des pages sociales sur YouTube, Twitch, Discord, etc. Sur cette page, je rassemble mes idees, mes projets et mes commissions.",
+      "aboutText": "Je suis un garçon qui a envie de travailler, avec des passions et des talents, et des pages sociales sur YouTube, Twitch, Discord, etc. Sur cette page, je rassemble mes idées, mes projets et mes commissions.",
       "contactEyebrow": "Liens",
       "contactTitle": "Tu me trouves ici.",
       "loginButton": "Connexion",
       "loginDiscord": "Connexion avec Discord",
       "loginGoogle": "Connexion avec Google",
-      "loginEmail": "Connexion avec Email",
+      "loginEmail": "Connexion avec e-mail",
       "loginLogout": "Déconnexion",
       "authEyebrow": "Connexion",
       "authTitle": "Crée ton profil",
@@ -262,7 +262,7 @@ window.PORTFOLIO_DATA = {
       "authSubmit": "Entrer",
       "authCancel": "Annuler",
       "authPhotoHelp": "Clique sur le cercle pour importer une photo.",
-      "authCaptchaMissing": "Ajoute une site key reCAPTCHA dans content.js pour activer la vraie vérification.",
+      "authCaptchaMissing": "Ajoute une clé de site reCAPTCHA dans content.js pour activer la vraie vérification.",
       "authEmailInvalid": "Entre une vraie adresse email, pas une adresse de test.",
       "authCaptchaInvalid": "Complète la vérification reCAPTCHA."
     },
@@ -334,7 +334,7 @@ window.PORTFOLIO_DATA = {
         "random"
       ],
       "description": {
-        "it": "Qui inserisco idee libere, test, cose casuali e contenuti piu leggeri.",
+        "it": "Qui inserisco idee libere, test, cose casuali e contenuti più leggeri.",
         "de": "Freie Ideen, Tests, random Sachen und leichtere Inhalte.",
         "en": "Loose ideas, tests, random things, and lighter content I want to show."
       },
@@ -348,7 +348,7 @@ window.PORTFOLIO_DATA = {
           },
           "description": {
             "it": "Immagine di un futuro server Minecraft tra YouTuber, hostato da me e di cui faccio parte.",
-            "de": "bild fuer einen zukuenftigen Minecraft-Server mit YouTubern, der von mir gehostet wird und an dem ich selbst teilnehme.",
+            "de": "Bild für einen zukünftigen Minecraft-Server mit YouTubern, der von mir gehostet wird und an dem ich selbst teilnehme.",
             "en": "image for a future Minecraft server with YouTubers, hosted by me and with me as part of it."
           }
         },
@@ -361,7 +361,7 @@ window.PORTFOLIO_DATA = {
           },
           "description": {
             "it": "Icona realizzata da me per un torneo di Brawl Stars che ho organizzato, diretto e progettato.",
-            "de": "Icon fuer ein Brawl-Stars-Turnier, das ich selbst organisiert, geleitet und geplant habe.",
+            "de": "Icon für ein Brawl-Stars-Turnier, das ich selbst organisiert, geleitet und geplant habe.",
             "en": "Icon made by me for a Brawl Stars tournament that I organized, directed, and designed myself."
           }
         },
@@ -373,8 +373,8 @@ window.PORTFOLIO_DATA = {
             "en": "Video Thumbnail"
           },
           "description": {
-            "it": "Questa e un prototipo di una copertina per un possibile video Youtube futuro, fatta per allenarmi.",
-            "de": "Das ist ein Prototyp eines Covers fuer ein moegliches zukuenftiges YouTube-Video, gemacht zum Ueben.",
+            "it": "Questo è il prototipo di una copertina per un possibile video YouTube futuro, fatto per allenarmi.",
+            "de": "Das ist ein Prototyp eines Covers für ein mögliches zukünftiges YouTube-Video, gemacht zum Üben.",
             "en": "This is a prototype cover for a possible future YouTube video, made as practice."
           },
           "featured": true
@@ -401,7 +401,7 @@ window.PORTFOLIO_DATA = {
       ],
       "description": {
         "it": "Video, post, reel e contenuti collegati ai miei canali.",
-        "de": "Videos, Posts, Reels und Inhalte rund um meine Kanaele.",
+        "de": "Videos, Posts, Reels und Inhalte rund um meine Kanäle.",
         "en": "Videos, posts, reels, and content connected to my channels."
       },
       "gallery": [
@@ -413,7 +413,7 @@ window.PORTFOLIO_DATA = {
             "en": "Video Thumbnail"
           },
           "description": {
-            "it": "Questa e la copertina di uno dei video piu importanti e influenti del mio canale YouTube.",
+            "it": "Questa è la copertina di uno dei video più importanti e influenti del mio canale YouTube.",
             "de": "Das ist das Cover eines der einflussreichsten und wichtigsten Videos auf meinem YouTube-Kanal.",
             "en": "This is the cover for one of the most influential and important videos on my YouTube channel."
           }
@@ -426,8 +426,8 @@ window.PORTFOLIO_DATA = {
             "en": "Versus Thumbnail"
           },
           "description": {
-            "it": "Anche questa e la copertina di un mio vecchio video YouTube, rifatta per allenarmi.",
-            "de": "Auch das ist ein Cover eines alten YouTube-Videos von mir, das ich vor kurzem zum Ueben neu gemacht habe.",
+            "it": "Anche questa è la copertina di un mio vecchio video YouTube, rifatta per allenarmi.",
+            "de": "Auch das ist ein Cover eines alten YouTube-Videos von mir, das ich vor kurzem zum Üben neu gemacht habe.",
             "en": "This is also a cover from an old YouTube video of mine, recently remade as practice."
           }
         },
@@ -439,8 +439,8 @@ window.PORTFOLIO_DATA = {
             "en": "CosmicMC"
           },
           "description": {
-            "it": "Questa e una delle immagini social di CosmicMC, uno dei progetti piu importanti per me: un server Minecraft pubblico non ancora aperto.",
-            "de": "Das sind die Icons der Social-Seiten von CosmicMC, einem meiner wichtigsten Projekte ein oeffentlicher Minecraft-Server, der noch nicht geoeffnet ist.",
+            "it": "Questa è una delle immagini social di CosmicMC, uno dei progetti più importanti per me: un server Minecraft pubblico non ancora aperto.",
+            "de": "Das sind die Icons der Social-Seiten von CosmicMC, einem meiner wichtigsten Projekte: ein öffentlicher Minecraft-Server, der noch nicht geöffnet ist.",
             "en": "These are one of the icons for CosmicMC's social pages, one of my most important projects a public Minecraft server that is not open yet."
           },
           "featured": true
@@ -457,7 +457,7 @@ window.PORTFOLIO_DATA = {
       "placeholder": "#5533b3",
       "title": {
         "it": "Commissioni",
-        "de": "Auftraege",
+        "de": "Aufträge",
         "en": "Commissions"
       },
       "tags": [
@@ -467,7 +467,7 @@ window.PORTFOLIO_DATA = {
       ],
       "description": {
         "it": "Qui inserisco lavori richiesti da altre persone: grafiche, pagine e contenuti.",
-        "de": "Hier zeige ich Arbeiten fuer andere Personen, Grafiken, Seiten oder Content.",
+        "de": "Hier zeige ich Arbeiten für andere Personen, Grafiken, Seiten oder Content.",
         "en": "Requested work, graphics, pages, or content I made for other people."
       },
       "gallery": [
